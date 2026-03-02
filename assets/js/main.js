@@ -40,6 +40,8 @@ window.onload = function () {
     dibujarCerca(ctx, 60);        //26
     dibujarCerca(ctx, 80);        //27
     dibujarCerca(ctx, 100);       //28
+      dibujarArbusto(ctx, 400);     //29
+    dibujarArbusto(ctx, 450);     //30
     };
 /* 1 */
 function dibujarCielo(ctx){
@@ -180,4 +182,11 @@ function dibujarPuente(ctx){
 function dibujarCerca(ctx,x){
     ctx.fillStyle="#D7CCC8";
     ctx.fillRect(x,260,10,40);
+}
+/* 29-30 */
+function dibujarArbusto(ctx,x){
+    ctx.beginPath();
+    ctx.arc(x,290,20,0,Math.PI*2);
+    ctx.fillStyle="darkgreen";
+    ctx.fill();
 }
