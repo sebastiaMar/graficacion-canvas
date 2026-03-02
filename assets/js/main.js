@@ -28,3 +28,13 @@ function dibujarSol(ctx){
     ctx.fillStyle="yellow";
     ctx.fill();
 }
+
+/* 3 */
+function dibujarMontana1(ctx){
+    ctx.beginPath();
+    ctx.moveTo(50,250);
+    ctx.lineTo(150,130);
+    ctx.lineTo(250,250);
+    ctx.fillStyle="#8B7765";
+    ctx.fill();
+}
