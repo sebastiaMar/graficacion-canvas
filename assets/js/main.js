@@ -14,6 +14,9 @@ window.onload = function () {
 
     dibujarCielo(ctx);            //1
     dibujarSol(ctx);              //2
+     dibujarMontana1(ctx);         //3
+    dibujarMontana2(ctx);         //4
+    dibujarPasto(ctx);            //5
     };
 /* 1 */
 function dibujarCielo(ctx){
