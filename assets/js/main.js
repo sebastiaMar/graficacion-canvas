@@ -27,6 +27,12 @@ window.onload = function () {
     dibujarArbol(ctx, 200);       //13
     dibujarNube(ctx, 100, 80);    //14
     dibujarNube(ctx, 300, 60);    //15
+    dibujarCamino(ctx);           //16
+    dibujarPoste(ctx);            //17
+    dibujarLampara(ctx);          //18
+    dibujarAuto(ctx);             //19
+    dibujarLlanta(ctx, 240);      //20
+    dibujarLlanta(ctx, 290);      //21
     };
 /* 1 */
 function dibujarCielo(ctx){
@@ -115,5 +121,38 @@ function dibujarNube(ctx,x,y){
     ctx.arc(x,y,20,0,Math.PI*2);
     ctx.arc(x+25,y,20,0,Math.PI*2);
     ctx.arc(x+50,y,20,0,Math.PI*2);
+    ctx.fill();
+}
+/* 16 */
+function dibujarCamino(ctx){
+    ctx.fillStyle="#A1887F";
+    ctx.fillRect(240,300,20,100);
+}
+
+/* 17 */
+function dibujarPoste(ctx){
+    ctx.fillStyle="gray";
+    ctx.fillRect(350,200,10,100);
+}
+
+/* 18 */
+function dibujarLampara(ctx){
+    ctx.beginPath();
+    ctx.arc(355,190,10,0,Math.PI*2);
+    ctx.fillStyle="yellow";
+    ctx.fill();
+}
+
+/* 19 */
+function dibujarAuto(ctx){
+    ctx.fillStyle="blue";
+    ctx.fillRect(220,320,100,30);
+}
+
+/* 20-21 */
+function dibujarLlanta(ctx,x){
+    ctx.beginPath();
+    ctx.arc(x,350,15,0,Math.PI*2);
+    ctx.fillStyle="black";
     ctx.fill();
 }
