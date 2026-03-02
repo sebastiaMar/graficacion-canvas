@@ -33,6 +33,13 @@ window.onload = function () {
     dibujarAuto(ctx);             //19
     dibujarLlanta(ctx, 240);      //20
     dibujarLlanta(ctx, 290);      //21
+     dibujarRio(ctx);              //22
+    dibujarPuente(ctx);           //23
+    dibujarCerca(ctx, 20);        //24
+    dibujarCerca(ctx, 40);        //25
+    dibujarCerca(ctx, 60);        //26
+    dibujarCerca(ctx, 80);        //27
+    dibujarCerca(ctx, 100);       //28
     };
 /* 1 */
 function dibujarCielo(ctx){
@@ -155,4 +162,22 @@ function dibujarLlanta(ctx,x){
     ctx.arc(x,350,15,0,Math.PI*2);
     ctx.fillStyle="black";
     ctx.fill();
+}
+
+/* 22 */
+function dibujarRio(ctx){
+    ctx.fillStyle="#42A5F5";
+    ctx.fillRect(0,270,150,30);
+}
+
+/* 23 */
+function dibujarPuente(ctx){
+    ctx.fillStyle="#795548";
+    ctx.fillRect(20,260,120,10);
+}
+
+/* 24-28 */
+function dibujarCerca(ctx,x){
+    ctx.fillStyle="#D7CCC8";
+    ctx.fillRect(x,260,10,40);
 }
