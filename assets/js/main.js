@@ -38,3 +38,18 @@ function dibujarMontana1(ctx){
     ctx.fillStyle="#8B7765";
     ctx.fill();
 }
+/* 4 */
+function dibujarMontana2(ctx){
+    ctx.beginPath();
+    ctx.moveTo(200,250);
+    ctx.lineTo(350,120);
+    ctx.lineTo(480,250);
+    ctx.fillStyle="#6E5849";
+    ctx.fill();
+}
+
+/* 5 */
+function dibujarPasto(ctx){
+    ctx.fillStyle="#228B22";
+    ctx.fillRect(0,250,500,150);
+}
