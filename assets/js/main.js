@@ -20,6 +20,8 @@ window.onload = function () {
      dibujarCasa(ctx);             //6
     dibujarTecho(ctx);            //7
     dibujarPuerta(ctx);           //8
+     dibujarVentanaIzq(ctx);       //9
+    dibujarVentanaDer(ctx);       //10
     };
 /* 1 */
 function dibujarCielo(ctx){
@@ -79,4 +81,15 @@ function dibujarTecho(ctx){
 function dibujarPuerta(ctx){
     ctx.fillStyle="#5D4037";
     ctx.fillRect(245,230,30,70);
+}
+/* 9 */
+function dibujarVentanaIzq(ctx){
+    ctx.fillStyle="#BBDEFB";
+    ctx.fillRect(215,210,25,25);
+}
+
+/* 10 */
+function dibujarVentanaDer(ctx){
+    ctx.fillStyle="#BBDEFB";
+    ctx.fillRect(290,210,25,25);
 }
