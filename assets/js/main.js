@@ -17,6 +17,9 @@ window.onload = function () {
      dibujarMontana1(ctx);         //3
     dibujarMontana2(ctx);         //4
     dibujarPasto(ctx);            //5
+     dibujarCasa(ctx);             //6
+    dibujarTecho(ctx);            //7
+    dibujarPuerta(ctx);           //8
     };
 /* 1 */
 function dibujarCielo(ctx){
@@ -55,4 +58,25 @@ function dibujarMontana2(ctx){
 function dibujarPasto(ctx){
     ctx.fillStyle="#228B22";
     ctx.fillRect(0,250,500,150);
+}
+/* 6 */
+function dibujarCasa(ctx){
+    ctx.fillStyle="#FF7043";
+    ctx.fillRect(200,190,120,110);
+}
+
+/* 7 */
+function dibujarTecho(ctx){
+    ctx.beginPath();
+    ctx.moveTo(190,190);
+    ctx.lineTo(260,140);
+    ctx.lineTo(330,190);
+    ctx.fillStyle="#B71C1C";
+    ctx.fill();
+}
+
+/* 8 */
+function dibujarPuerta(ctx){
+    ctx.fillStyle="#5D4037";
+    ctx.fillRect(245,230,30,70);
 }
