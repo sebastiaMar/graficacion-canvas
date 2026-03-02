@@ -22,6 +22,11 @@ window.onload = function () {
     dibujarPuerta(ctx);           //8
      dibujarVentanaIzq(ctx);       //9
     dibujarVentanaDer(ctx);       //10
+    dibujarArbol(ctx, 80);        //11
+    dibujarArbol(ctx, 140);       //12
+    dibujarArbol(ctx, 200);       //13
+    dibujarNube(ctx, 100, 80);    //14
+    dibujarNube(ctx, 300, 60);    //15
     };
 /* 1 */
 function dibujarCielo(ctx){
@@ -92,4 +97,23 @@ function dibujarVentanaIzq(ctx){
 function dibujarVentanaDer(ctx){
     ctx.fillStyle="#BBDEFB";
     ctx.fillRect(290,210,25,25);
+}
+/* 11-13 */
+function dibujarArbol(ctx,x){
+    ctx.fillStyle="#8B4513";
+    ctx.fillRect(x,230,20,60);
+    ctx.beginPath();
+    ctx.arc(x+10,210,30,0,Math.PI*2);
+    ctx.fillStyle="green";
+    ctx.fill();
+}
+
+/* 14-15 */
+function dibujarNube(ctx,x,y){
+    ctx.fillStyle="white";
+    ctx.beginPath();
+    ctx.arc(x,y,20,0,Math.PI*2);
+    ctx.arc(x+25,y,20,0,Math.PI*2);
+    ctx.arc(x+50,y,20,0,Math.PI*2);
+    ctx.fill();
 }
